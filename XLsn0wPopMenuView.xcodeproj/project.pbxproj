@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3578274920CEC1F100A38542 /* XLsn0wPopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 3578274820CEC1F100A38542 /* XLsn0wPopMenu.m */; };
 		6654B20A20CE6B4B003542D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6654B20920CE6B4B003542D6 /* AppDelegate.m */; };
 		6654B20D20CE6B4B003542D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6654B20C20CE6B4B003542D6 /* ViewController.m */; };
 		6654B21020CE6B4B003542D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6654B20E20CE6B4B003542D6 /* Main.storyboard */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3578274720CEC1F000A38542 /* XLsn0wPopMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wPopMenu.h; sourceTree = "<group>"; };
+		3578274820CEC1F100A38542 /* XLsn0wPopMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wPopMenu.m; sourceTree = "<group>"; };
 		6654B20520CE6B4B003542D6 /* XLsn0wPopMenuView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLsn0wPopMenuView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6654B20820CE6B4B003542D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6654B20920CE6B4B003542D6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -87,9 +90,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3578274D20CEC28D00A38542 /* XLsn0wPopMenu */ = {
+			isa = PBXGroup;
+			children = (
+				3578274720CEC1F000A38542 /* XLsn0wPopMenu.h */,
+				3578274820CEC1F100A38542 /* XLsn0wPopMenu.m */,
+			);
+			path = XLsn0wPopMenu;
+			sourceTree = "<group>";
+		};
 		6654B1FC20CE6B4B003542D6 = {
 			isa = PBXGroup;
 			children = (
+				3578274D20CEC28D00A38542 /* XLsn0wPopMenu */,
+				6654B23E20CE6D03003542D6 /* PopMenuModel */,
 				6654B23A20CE6D03003542D6 /* PopMenuView */,
 				6654B20720CE6B4B003542D6 /* XLsn0wPopMenuView */,
 				6654B22020CE6B4D003542D6 /* XLsn0wPopMenuViewTests */,
@@ -146,7 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				6654B23B20CE6D03003542D6 /* Cell */,
-				6654B23E20CE6D03003542D6 /* Model */,
 				6654B24120CE6D03003542D6 /* PopMenuView.h */,
 				6654B24220CE6D03003542D6 /* PopMenuView.m */,
 			);
@@ -162,13 +175,13 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		6654B23E20CE6D03003542D6 /* Model */ = {
+		6654B23E20CE6D03003542D6 /* PopMenuModel */ = {
 			isa = PBXGroup;
 			children = (
 				6654B23F20CE6D03003542D6 /* PopMenuModel.h */,
 				6654B24020CE6D03003542D6 /* PopMenuModel.m */,
 			);
-			path = Model;
+			path = PopMenuModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,6 +317,7 @@
 				6654B24320CE6D04003542D6 /* PopMenuCell.m in Sources */,
 				6654B20D20CE6B4B003542D6 /* ViewController.m in Sources */,
 				6654B21820CE6B4D003542D6 /* main.m in Sources */,
+				3578274920CEC1F100A38542 /* XLsn0wPopMenu.m in Sources */,
 				6654B20A20CE6B4B003542D6 /* AppDelegate.m in Sources */,
 				6654B24420CE6D04003542D6 /* PopMenuModel.m in Sources */,
 				6654B24520CE6D04003542D6 /* PopMenuView.m in Sources */,

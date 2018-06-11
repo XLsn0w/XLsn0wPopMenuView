@@ -10,6 +10,8 @@
 #import "PopMenuView.h"
 #import "PopMenuModel.h"
 
+#import "XLsn0wPopMenu.h"
+
 @interface ViewController ()
 
 @end
@@ -35,11 +37,18 @@
         [data addObject:info];
     }
     
-    PopMenuView *popMenu = [[PopMenuView alloc] initWithPopMenuWidth:215 popMenuViewY:-40 dataArray:data];
-    popMenu.action = ^(NSInteger selectedIndex, NSString *selectedTitle) {
-        NSLog(@"selectedIndex = %ld", selectedIndex);
-        NSLog(@"selectedTitle = %@", selectedTitle);
-    };
+//    PopMenuView *popMenu = [[PopMenuView alloc] initWithPopMenuWidth:215 popMenuViewY:-40 dataArray:data];
+//    popMenu.action = ^(NSInteger selectedIndex, NSString *selectedTitle) {
+//        NSLog(@"selectedIndex = %ld", selectedIndex);
+//        NSLog(@"selectedTitle = %@", selectedTitle);
+//    };
+    
+    [XLsn0wPopMenu popWithDataArray:data
+                              width:200
+                   triangleLocation:CGPointMake([UIScreen mainScreen].bounds.size.width-30, 60)
+                             action:^(NSInteger selectedIndex, PopMenuModel *model) {
+                                 NSLog(@"%ld", selectedIndex);
+                             }];
 }
 
 - (void)didReceiveMemoryWarning {
